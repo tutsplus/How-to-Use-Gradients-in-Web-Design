@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gradient Text</title>
+
+	<!-- Reset -->
+	<link href=" https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css " rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		:root {
+			--gray-base: #100F37;
+			--gray-tint-90: #e7e7eb;
+			--gray-tint-60: #9f9faf;
+			--accent-base: #48DB25;
+		}
+
+		html,
+		body {
+			min-height: 100%;
+		}
+
+		body {
+			font-family: 'Figtree', sans-serif;
+			color: var(--gray-tint-90);
+			background-color: var(--gray-base);
+		}
+
+		p {
+			line-height: 1.5;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 4rem 8rem 8rem;
+		}
+
+		header nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 2rem;
+		}
+
+		header nav a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		header img {
+			height: 2rem;
+			width: auto;
+		}
+
+		#hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			text-align: center;
+			width: 100%;
+			max-width: 60rem;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 8rem;
+			line-height: 1.1;
+			letter-spacing: -3px;
+		}
+
+		p.large {
+			font-size: 150%;
+			color: var(--gray-tint-60);
+		}
+
+		button {
+			appearance: none;
+			padding: 1.5rem 3rem;
+			border-radius: 16px;
+			border: none;
+			font-size: 125%;
+			font-weight: bold;
+			cursor: pointer;
+			color: var(--gray-base);
+			background-color: var(--accent-base);
+		}
+
+		h1 span {
+			background: #4AC29A;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			background-clip: text;
+			-webkit-background-clip: text; /* Safari/Chrome */
+			color: transparent;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href=""><img src="../img_src/logo-pp.svg" alt="Logo"></a>
+
+		<nav>
+			<ul>
+				<li><a href="#">Product Features</a></li>
+				<li><a href="#">Tutorials</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Get in Touch</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="hero">
+		<h1>Create your <span>digital</span> wallet.</h1>
+
+		<p class="large">Add your cards and pay with your phone everywhere. Convenience is the key.</p>
+
+		<button>Sign up for free</button>
+	</div>
+</body>
+</html>
